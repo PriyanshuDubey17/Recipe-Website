@@ -1,0 +1,134 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  
+}
+
+.container{
+  height: 100vh;
+  width: 100vw;
+  
+  
+}
+.logo{
+  height: 60px;
+  width: 100%;
+  
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(36,36,113,1) 35%, rgba(0,212,255,1) 100%);
+display: flex;
+align-items: center;
+justify-content: space-around;
+
+}
+.logo h2{
+  font-size: 2rem;
+  color: azure;
+}
+.navitem{
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.navitem a{
+  font-size: 2rem;
+  color: azure;
+  text-decoration: none;
+}
+.main-section{
+
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+   box-shadow: 0px 0px 30px 1px; 
+  margin-top: 20px;
+  border-radius: 5px;
+  background: rgb(241,241,244);
+background: linear-gradient(90deg, rgba(241,241,244,1) 7%, rgba(241,241,244,1) 11%, rgba(113,36,36,0.09865196078431371) 11%, rgba(0,212,255,1) 100%);
+  
+  
+}
+.item{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.rightbox img{
+  height: 300px;
+  width: 200px;
+  margin-top: 75px;
+  margin-bottom: 10px;
+  margin-right: 30px;
+  border-radius:20px;
+ 
+  filter: drop-shadow(20px 10px 10px #070708);
+}
+.leftbox{
+  margin-top: 100px;
+  margin-left: 20px;
+}
+#first{
+  font-size: 2rem;
+  margin-bottom: 10px;
+
+}
+.leftbox-div h2{
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.leftbox-div ul{
+  margin-left: 40px;
+  margin-top: 10px;
+}
+.second h2{
+  font-size: 1.6rem;
+  margin-left: 10px;
+  margin-top: 10px
+}
+.second ol{
+  margin-left: 40px;
+  margin-top: 10px;
+
+}
+.rightbox:hover{
+  transform: scale(0.9);
+  transition: all 0.6s  linear 0s;
+}
+.rightbox{
+  position: relative;
+  overflow: hidden;
+ 
+}
+.rightbox .lays{
+position: absolute;
+top: 0;
+left: 0;
+height: 300px;
+width: 200px;
+margin-top: 75px;
+margin-bottom: 10px;
+margin-right: 30px;
+border-radius:20px;
+background-color: rgba(36, 34, 34, 0.713);
+opacity: 0;
+
+}
+.lays{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rightbox .lays span{
+  color: azure;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+.rightbox:hover .lays{
+  opacity: 1;
+  transition: all 0.6s  linear 0s;
+}
